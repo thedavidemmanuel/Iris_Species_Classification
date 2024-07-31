@@ -18,7 +18,6 @@ This project utilizes a Multi-layer Perceptron (MLP) classifier to classify iris
 ## Project Structure
 
 ```
-
 iris-species-classification/
 │
 ├── data/
@@ -55,19 +54,19 @@ Ensure you have Python 3.7+ installed.
 
 2. Create a virtual environment:
 
-   ```sh
-   python -m venv env
-   ```
+    ```sh
+    python -m venv env
+    ```
 
 3. Activate the virtual environment:
 
-   - On Windows: `env\Scripts\activate`
-   - On Unix or MacOS: `source env/bin/activate`
+    - On Windows: `env\Scripts\activate`
+    - On Unix or MacOS: `source env/bin/activate`
 
 4. Install the required packages:
-   ```sh
-   pip install -r requirements.txt
-   ```
+    ```sh
+    pip install -r requirements.txt
+    ```
 
 ## Data Description
 
@@ -141,9 +140,9 @@ The Jupyter notebook `notebooks/iris_classification.ipynb` provides an interacti
 
 1. Ensure you have Jupyter installed: `pip install jupyter`
 2. Navigate to the project directory and start Jupyter:
-   ```sh
-   jupyter notebook
-   ```
+    ```sh
+    jupyter notebook
+    ```
 3. Open `notebooks/iris_classification.ipynb` from the Jupyter interface.
 
 The notebook includes cells for:
