@@ -1,6 +1,6 @@
 # Iris Species Classification
 
-## Brief
+# Iris Species Classification
 
 This project aims to classify iris flowers into three species using sepal and petal measurements from the classic Iris dataset introduced by R.A. Fisher in 1936. The dataset contains 150 samples, with 50 samples for each of the three iris species.
 
@@ -21,23 +21,22 @@ This project utilizes a Multi-layer Perceptron (MLP) classifier to classify iris
 iris-species-classification/
 │
 ├── data/
-│ └── Iris.csv
+│   └── Iris.csv
 │
 ├── notebooks/
-│ └── iris_classification.ipynb
+│   └── iris_classification.ipynb
 │
 ├── src/
-│ ├── data_preprocessing.py
-│ ├── model.py
-│ └── evaluation.py
+│   ├── data_preprocessing.py
+│   ├── model.py
+│   └── evaluation.py
 │
 ├── models/
-│ └── iris_model.pkl
+│   └── iris_model.pkl
 │
 ├── requirements.txt
 │
 └── README.md
-
 ```
 
 ## Setup Instructions
@@ -45,28 +44,27 @@ iris-species-classification/
 Ensure you have Python 3.7+ installed.
 
 1. Clone this repository:
+
    ```sh
    git clone https://github.com/thedavidemmanuel/Iris_Species_Classification.git
    cd iris-species-classification
    ```
 
-````
-
 2. Create a virtual environment:
 
-    ```sh
-    python -m venv env
-    ```
+   ```sh
+   python -m venv env
+   ```
 
 3. Activate the virtual environment:
 
-    - On Windows: `env\Scripts\activate`
-    - On Unix or MacOS: `source env/bin/activate`
+   - On Windows: `env\Scripts\activate`
+   - On Unix or MacOS: `source env/bin/activate`
 
 4. Install the required packages:
-    ```sh
-    pip install -r requirements.txt
-    ```
+   ```sh
+   pip install -r requirements.txt
+   ```
 
 ## Data Description
 
@@ -140,9 +138,9 @@ The Jupyter notebook `notebooks/iris_classification.ipynb` provides an interacti
 
 1. Ensure you have Jupyter installed: `pip install jupyter`
 2. Navigate to the project directory and start Jupyter:
-    ```sh
-    jupyter notebook
-    ```
+   ```sh
+   jupyter notebook
+   ```
 3. Open `notebooks/iris_classification.ipynb` from the Jupyter interface.
 
 The notebook includes cells for:
@@ -169,8 +167,3 @@ This project is open source and available under the [MIT License](LICENSE).
 ## Contact
 
 For any queries, please open an issue in this repository.
-
-```
-
-```
-````
