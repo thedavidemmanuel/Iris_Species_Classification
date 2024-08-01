@@ -14,8 +14,8 @@ import uvicorn
 app = FastAPI()
 
 # Updated file paths
-MODEL_PATH = r"C:\Users\Administrator\Desktop\Iris_Species_Classification\models\best_mlp_model.pkl"
-PIPELINE_PATH = r"C:\Users\Administrator\Desktop\Iris_Species_Classification\models\preprocessing_pipeline.pkl"
+MODEL_PATH = "models/best_mlp_model.pkl"
+PIPELINE_PATH = "models/preprocessing_pipeline.pkl"
 
 # Load the model and preprocessing pipeline
 model = joblib.load(MODEL_PATH)
