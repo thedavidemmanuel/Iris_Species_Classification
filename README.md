@@ -19,6 +19,7 @@ The Iris Species Classification project utilizes a Multi-layer Perceptron (MLP) 
 ## Pipeline Visualization
 
 - This can also be found in the `notebooks/Iris.ipynb` file.
+
   ![Image](img/download.png)
 
 ## Project Structure
