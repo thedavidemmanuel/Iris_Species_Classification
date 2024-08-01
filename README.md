@@ -16,7 +16,7 @@ The Iris Species Classification project utilizes a Multi-layer Perceptron (MLP) 
 - Ability to retrain the model with new data
 - Real-time predictions through API endpoints
 
-![alt text](download.png)
+![Image](img/download.png)
 
 ## Project Structure
 
