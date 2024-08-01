@@ -1,7 +1,17 @@
-import numpy as np
+import joblib
 
-def make_prediction(model, preprocessor, label_encoder, input_data):
-    input_transformed = preprocessor.transform([input_data])
-    prediction = model.predict(input_transformed)
-    prediction_label = label_encoder.inverse_transform(prediction)
-    return prediction_label[0]
+def load_model(model_filename):
+    return joblib.load(model_filename)
+
+def load_preprocessing_pipeline(pipeline_filename):
+    return joblib.load(pipeline_filename)
+
+def predict(model, preprocessing_pipeline, input_data):
+    processed_data = preprocessing_pipeline.transform(input_data)
+    prediction = model.predict(processed_data)
+    return prediction
+
+def predict_proba(model, preprocessing_pipeline, input_data):
+    processed_data = preprocessing_pipeline.transform(input_data)
+    probabilities = model.predict_proba(processed_data)
+    return probabilities
