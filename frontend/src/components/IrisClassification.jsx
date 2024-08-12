@@ -29,13 +29,13 @@ const IrisClassification = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const response = await fetch(`https://iris-species-classification-1.onrender.com/`, {
+      const response = await fetch(`https://iris-species-classification-1.onrender.com/predict`, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
         },
         body: JSON.stringify(measurements),
-        
+
       });
       if (!response.ok) throw new Error('Failed to get prediction');
       const data = await response.json();
@@ -56,17 +56,17 @@ const IrisClassification = () => {
 
   return (
     <div className="iris-main">
-      <ToastContainer 
-      position='top-center'
-      closeOnClick
+      <ToastContainer
+        position='top-center'
+        closeOnClick
 
-      rtl={false}
+        rtl={false}
       />
       <nav>
         <h1 className="text-3xl font-bold mb-6">Iris Flower Classification</h1>
         <a href="#enter"><button>Get Prediction</button></a>
       </nav>
-      
+
       <div className="iris-text">
         <div className="image">
           <img src={David} alt="David the Gardener" className="w-24 h-24 rounded-full mr-4" />
@@ -113,33 +113,33 @@ const IrisClassification = () => {
 
       <form onSubmit={handleSubmit} className="enter" id='enter'>
         <h2 className="text-xl font-semibold mb-4">Get Prediction</h2>
-        <p>After entering the required measurements—Sepal Length, Sepal Width, Petal Length, and Petal Width—please make sure you've input only numbers. Once everything is filled out, simply click the "Predict" button to get your prediction. 
+        <p>After entering the required measurements—Sepal Length, Sepal Width, Petal Length, and Petal Width—please make sure you've input only numbers. Once everything is filled out, simply click the "Predict" button to get your prediction.
           The model will then analyze your inputs and tell you which Iris species you're looking at!</p>
         <div className="inputs">
-          <input 
-            type="number" 
-            placeholder='Sepal Length (cm)' 
+          <input
+            type="number"
+            placeholder='Sepal Length (cm)'
             name='sepal_length'
             onChange={handleInputChange}
             value={measurements.sepal_length}
           />
-          <input 
-            type="number" 
-            placeholder='Sepal Width (cm)' 
+          <input
+            type="number"
+            placeholder='Sepal Width (cm)'
             name='sepal_width'
             onChange={handleInputChange}
             value={measurements.sepal_width}
           />
-          <input 
-            type="number" 
-            placeholder='Petal Length (cm)' 
+          <input
+            type="number"
+            placeholder='Petal Length (cm)'
             name='petal_length'
             onChange={handleInputChange}
             value={measurements.petal_length}
           />
-          <input 
-            type="number" 
-            placeholder='Petal Width (cm)' 
+          <input
+            type="number"
+            placeholder='Petal Width (cm)'
             name='petal_width'
             onChange={handleInputChange}
             value={measurements.petal_width}
@@ -154,11 +154,11 @@ const IrisClassification = () => {
           </button>
         </div>
         {prediction && (
-        <h1>The predicted Iris species is: {prediction.class_label}</h1>
+          <h1>The predicted Iris species is: {prediction.class_label}</h1>
         )}
       </form>
 
-     
+
 
       {error && (
         <div className="error">
