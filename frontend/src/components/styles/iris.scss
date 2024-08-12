@@ -33,11 +33,13 @@ nav{
     align-items: flex-start;
     padding-inline: 25px;
     background-color: #E2E3EE;
+    flex-wrap: wrap;
     .image{
-        
+        flex: 1 1 500px;
         width: 100%;
         img{
             max-width: 600px;
+            width: 100%;
         }
     }
 
@@ -45,6 +47,7 @@ nav{
         padding-top: 80px;
         display: grid;
         gap: 20px;
+        flex: 1 1 500px;
     }
 
    
@@ -62,6 +65,11 @@ nav{
         display: grid;
         gap: 15px;
         font-size: 10px;
+        text-wrap: nowrap;
+
+        img{
+            width: 100%;
+        }
     }
 }
 
@@ -118,3 +126,63 @@ nav{
         }
     }
 }
+
+@media  (max-width: 1050px) {
+    .iris-text{
+        padding-bottom: 30px;
+        
+        .image{
+            display: flex;
+            justify-content: center;
+        }
+        .text{
+            padding-top: 0px;
+        }
+    }
+    .how{
+        padding-inline: 100px;
+    }
+}
+
+@media (max-width: 750px) {
+  .enter{
+    padding-inline: 50px;
+  }
+}
+
+
+@media (max-width: 550px) {
+    .how{
+      padding-inline: 50px;
+    }
+    .enter{
+        .inputs{
+            grid-template-columns: 1fr;
+            gap: 20px;
+        }
+    }
+    nav{
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 20px;
+        text-wrap: nowrap;
+    }
+  }
+
+  @media (max-width: 450px) {
+    .enter{
+      padding-inline: 20px;
+    }
+    .images{
+      flex-direction: column;
+     
+    }
+
+    .iris-text{
+        padding-inline: 15px;
+    }
+
+    nav{
+        padding-inline: 30px;
+    }
+  }
