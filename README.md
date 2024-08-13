@@ -105,6 +105,8 @@ The `notebooks/Iris.ipynb` file contains detailed steps for:
 The model is deployed on Render. You can access the API documentation and test the model at:
 [https://iris-species-classification-1.onrender.com/docs#/default/predict_predict_post](https://iris-species-classification-1.onrender.com/docs#/default/predict_predict_post)
 
+The model is also deployed on vercel as a web app. You can access the web app and interact with the UI at: [https://iris-species-classification-5e23.vercel.app/](https://iris-species-classification-5e23.vercel.app/)
+
 ## Making Predictions
 
 To make a prediction, send a POST request to the `/predict` endpoint with the following JSON payload:
